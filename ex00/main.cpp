@@ -29,7 +29,7 @@ int main()
 	assignedClapTrap = copiedClapTrap;
 	assignedClapTrap.attack("enemy");
 	
-	// Test energy depletion
+	// Test run out of energy
 	std::cout << "\nTest run out of energy\n" << "------------------------------" << std::endl;
 	ClapTrap tiredClapTrap("tired");
 	for (int i = 0; i < 11; i++) {
