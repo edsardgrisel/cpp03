@@ -43,6 +43,13 @@ int main()
 	deadClapTrap.takeDamage(15);
 	deadClapTrap.attack("enemy");
 	deadClapTrap.beRepaired(1);
+
+	// Test repaired above 10
+	std::cout << "\nTest repaired above 10\n" << "------------------------------" << std::endl;
+	ClapTrap repairedClapTrap("repaired");
+	repairedClapTrap.beRepaired(5);
+	repairedClapTrap.takeDamage(14);
+	repairedClapTrap.attack("enemy");
 	
 	return 0;
 }
