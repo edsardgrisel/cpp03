@@ -1,5 +1,9 @@
 #include <string>
 
+#ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
+
+
 class ClapTrap
 {
 	protected:
@@ -27,3 +31,5 @@ class ClapTrap
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 };
+
+#endif // CLAPTRAP_HPP

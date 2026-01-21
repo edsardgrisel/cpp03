@@ -1,6 +1,11 @@
 #include "ClapTrap.hpp"
 #include <string>
 
+
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
+
+
 class ScavTrap : public ClapTrap
 {
 private:
@@ -20,3 +25,5 @@ public:
 	void attack(const std::string& target);
 	void guardGate();
 };
+
+#endif // SCAVTRAP_HPP
