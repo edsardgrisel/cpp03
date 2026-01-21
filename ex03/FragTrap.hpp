@@ -1,6 +1,10 @@
 #include "ClapTrap.hpp"
 #include <string>
 
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
+
+
 class FragTrap : virtual public ClapTrap
 {
 private:
@@ -20,3 +24,5 @@ public:
 	// void attack(const std::string& target);
 	void highFivesGuys();
 };
+
+#endif // FRAGTRAP_HPP

@@ -2,6 +2,9 @@
 #include "ScavTrap.hpp"
 #include <string>
 
+#ifndef DIAMONDTRAP_HPP
+#define DIAMONDTRAP_HPP
+
 class DiamondTrap : public FragTrap, public ScavTrap
 {
 private:
@@ -21,3 +24,5 @@ public:
 	void attack(const std::string& target);
 	void whoAmI();
 };
+
+#endif // DIAMONDTRAP_HPP
