@@ -5,17 +5,17 @@
 DiamondTrap::DiamondTrap() : ClapTrap("Nameless_clap_name"), FragTrap(), ScavTrap(), name("Nameless")
 {
 	std::cout << "DiamondTrap Default constructor called" << std::endl;
-	this->hitPoints = FragTrap::hitPoints;
-	this->energyPoints = ScavTrap::energyPoints;
-	this->attackDamage = FragTrap::attackDamage;
+	this->hitPoints = 100;
+	this->energyPoints = 50;
+	this->attackDamage = 30;
 }
 
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), name(name)
 {
 	std::cout << "DiamondTrap Parameterized constructor called" << std::endl;
-	this->hitPoints = FragTrap::hitPoints;
-	this->energyPoints = ScavTrap::energyPoints;
-	this->attackDamage = FragTrap::attackDamage;
+	this->hitPoints = 100;
+	this->energyPoints = 50;
+	this->attackDamage = 30;
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap &other) : ClapTrap(other)
@@ -36,10 +36,6 @@ DiamondTrap&	DiamondTrap::operator=(const DiamondTrap &other)
 DiamondTrap::~DiamondTrap()
 {
 	std::cout << "DiamondTrap destructor called" << std::endl;
-}
-
-void DiamondTrap::attack(const std::string& target) {
-	ScavTrap::attack(target);
 }
 
 void DiamondTrap::whoAmI()
